@@ -117,7 +117,6 @@ public abstract class AbstractMenu implements Menu  {
                 inventory = holder.getInventory();
                 ((AbstractMenu) open).closedByPlayer(viewer, false);
             } else {
-                open.close(viewer);
                 inventory = createInventory(holder);
                 holder.setInventory(inventory);
                 viewer.openInventory(inventory);
